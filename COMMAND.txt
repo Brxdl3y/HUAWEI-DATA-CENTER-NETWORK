@@ -1,0 +1,164 @@
+HUAWEI DATA CENTER CLI COMMANDS
+
+##############################################
+!
+ADMIN ACCESS SWITCH
+!
+enable secret HSRP
+hostname ADMIN-ACCESS-SW
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+##############################################
+
+DATA CENTER ACCESS SWITCH
+!
+enable secret HSRP
+hostname DC-ACCESS-SW
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+############################################3####
+
+HQ CORE ROUTER
+!
+enable secret HSRP
+hostname HQ-CORE-R1
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 10.10.10.2 255.255.255.0
+ duplex half
+ speed 100
+ standby 10 ip 10.10.10.1
+ standby 10 priority 200
+ standby 10 preempt
+!
+interface GigabitEthernet0/2
+ ip address 10.10.20.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+ network 10.10.10.0 0.0.0.255
+ network 10.10.20.0 0.0.0.3
+ network 203.0.113.0 0.0.0.3
+!
+ip classless
+ip route 10.10.10.0 255.255.255.0 10.10.20.2 
+ip route 0.0.0.0 0.0.0.0 203.0.113.1 
+ip route 0.0.0.0 0.0.0.0 10.10.20.2 5
+!
+ip flow-export version 9
+!
+
+###################################################
+
+HQ REDUNDANT ROUTER
+!
+enable secert HSRP
+hostname RED-EDGE-RTR2 
+!
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.6 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 10.10.10.3 255.255.255.0
+ duplex half
+ speed 100
+ standby 10 ip 10.10.10.1
+ standby 10 priority 110
+ standby 10 preempt
+!
+interface GigabitEthernet0/2
+ ip address 10.10.20.2 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router eigrp 100
+no auto-summary
+ network 10.10.10.0 0.0.0.255
+ network 10.10.20.0 0.0.0.3
+ network 203.0.113.0 0.0.0.3
+
+##################################################
+
+SP2 ROUTER
+enable secret HSRP
+hostname SP2
+!
+interface Loopback0
+ ip address 4.4.4.4 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.5 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 203.0.113.10 255.255.255.252
+ duplex auto
+ speed auto
+!
+router eigrp 100
+no auto-summary
+ network 203.0.113.0 0.0.0.3
+!
+ip classless
+ip route 10.10.0.0 255.255.0.0 203.0.113.6 
+ip route 10.10.0.0 255.255.0.0 203.0.113.9 5
+ip route 203.0.113.0 255.255.255.252 203.0.113.
+
+#######################################################
+
+SP1 ROUTER
+!
+enable secret HSRP  
+hostname SP1
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 203.0.113.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ ip address 203.0.113.9 255.255.255.252
+ duplex auto
+ speed auto
+!
+router eigrp 100
+no auto-summary 
+ network 203.0.113.0 0.0.0.3
+!
+ip classless
+ip route 10.10.0.0 255.255.0.0 203.0.113.2 
+ip route 10.10.0.0 255.255.0.0 203.0.113.10 5
+ip route 203.0.113.4 255.255.255.252 203.0.113.10 
+!

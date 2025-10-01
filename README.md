@@ -4,7 +4,7 @@ This project represents a **highly-available, scalable, and secure enterprise-gr
 It’s designed with not just **connectivity** in mind but **resiliency, monitoring, and pragmatic scalability** —  
 the kind of approach a forward-thinking engineer would bring to a real-world Huawei/Cisco hybrid environment.  
 
-This isn’t just another lab file — it’s my personal take on how a data center network should feel: resilient, structured, and built with security and monitoring in mind. Think of it as equal parts engineering discipline and creative problem-solving.
+This isn’t just another lab file — it’s my personal take on how a data center network should feel: **resilient, structured**, and built with **security and sophistication** in mind. Think of it as equal parts engineering discipline and creative problem-solving.
 
 ---
 
@@ -23,7 +23,7 @@ This isn’t just another lab file — it’s my personal take on how a data cen
 
 ---
 
-🧠 My Philosophy (a peek into how I think)
+ **My Philosophy - a peek into how I think**
 
 Networking, to me, is not about “making pings work.” It’s about:
 
@@ -43,8 +43,8 @@ I design stories in packets — reliable, secure, and yes, a little glamorous.
 I genuinely enjoy this stuff. Every lab is more than practice — it’s me sharpening a craft I want to carry into my career. Networks are invisible when they work right, **but the engineers behind them shouldn’t be.** This project is me saying: **I’m ready to build the kind of infrastructure people can depend on.**
 
 
-AUTHOR - BRADLEY GIOVANNI  |  Network Engineer  |  Network Administrator
+AUTHOR - ***BRADLEY GIOVANNI  |  Network Engineer  |  Network Administrator**
 
-EMAIL: giovanniibradley@gmail.com
+EMAIL: **giovanniibradley@gmail.com**
 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/bradley-giovanniii293) 

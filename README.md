@@ -40,7 +40,7 @@ I design stories in packets — reliable, secure, and yes, a little glamorous.
 
 **Why this matters to me:**
 
-I genuinely enjoy this stuff. Every lab is more than practice — it’s me sharpening a craft I want to carry into my career. Networks are invisible when they work right, **but the engineers behind them shouldn’t be.** This project is me saying: **I’m ready to build the kind of infrastructure people can depend on.**
+I genuinely enjoy this stuff. Every lab is more than practice; it’s me sharpening a craft I want to carry into my career. Networks are invisible when they work right, **but the engineers behind them shouldn’t be.** This project is me saying: **I’m ready to build the kind of infrastructure people can depend on.**
 
 
 AUTHOR - ***BRADLEY GIOVANNI  |  Network Engineer  |  Network Administrator**

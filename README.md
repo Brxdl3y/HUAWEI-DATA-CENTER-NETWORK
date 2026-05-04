@@ -27,13 +27,13 @@ This isn’t just another lab file — it’s my personal take on how a data cen
 
 Networking, to me, is not about “making pings work.” It’s about:
 
-**Resilience** → If one link drops, users shouldn’t even notice.
+🔹**Resilience** → If one link drops, users shouldn’t even notice.
 
-**Security** → Building trust into the network fabric itself.
+🔹**Security** → Building trust into the network fabric itself.
 
-**Visibility** → If it happens on the wire, I want to see it.
+🔹**Visibility** → If it happens on the wire, I want to see it.
 
-**Elegance** → A config should not only work — it should look like it was designed on purpose.
+🔹**Elegance** → A config should not only work — it should look like it was designed on purpose.
 
 In short: I don’t just type commands;
 I design stories in packets — reliable, secure, and yes, a little glamorous.

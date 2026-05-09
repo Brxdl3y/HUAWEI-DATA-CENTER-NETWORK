@@ -23,7 +23,7 @@ This isn’t just another lab file — it’s my personal take on how a data cen
 
 ---
 
- **My Philosophy - a peek into how I think**
+📌 **My Philosophy - a peek into how I think**
 
 Networking, to me, is not about “making pings work.” It’s about:
 
@@ -38,7 +38,7 @@ Networking, to me, is not about “making pings work.” It’s about:
 In short: I don’t just type commands;
 I design stories in packets — reliable, secure, and yes, a little glamorous.
 
-**Why this matters to me:**
+📌**Why this matters to me:**
 
 I genuinely enjoy this stuff. Every lab is more than practice; it’s me sharpening a craft I want to carry into my career. Networks are invisible when they work right, **but the engineers behind them shouldn’t be.** This project is me saying: **I’m ready to build the kind of infrastructure people can depend on.**
 

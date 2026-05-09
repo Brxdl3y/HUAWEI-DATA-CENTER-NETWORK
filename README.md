@@ -15,7 +15,7 @@ This isn’t just another lab file — it’s my personal take on how a data cen
 - **Loopback Interfaces** to simulate remote reachability and improve EIGRP stability.
 
 
- **Additional Sophisticated Enhancements**
+📌 **Additional Sophisticated Enhancements**
 
 1. **Layer 2 Security**: DHCP Snooping + Port Security to eliminate rogue DHCP servers and lock down endpoints.  
 2. **EIGRP Stub Routing**: Efficient scaling to reduce unnecessary query flooding in a hierarchical design.  
